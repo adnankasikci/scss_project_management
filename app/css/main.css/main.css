@@ -1,4 +1,5 @@
-@use 'base';
-@use 'utilities';
-@use 'components';
-@use 'layouts';
+* {
+  font-family: "Aleo", serif;
+}
+
+/*# sourceMappingURL=main.css.map */

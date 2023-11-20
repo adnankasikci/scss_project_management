@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "sourceRoot": "",
+    "sources": [
+        "../../scss/base/_font-face.scss"
+    ],
+    "names": [],
+    "mappings": "AAEA;EACI",
+    "file": "main.css"
+}

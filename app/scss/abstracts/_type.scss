@@ -1,0 +1,29 @@
+// Alatsi Fonts
+
+@font-face {
+    font-family: 'Alatsi';
+    src: url(../../font/Alatsi-Regular.ttf) format('ttf'),
+}
+
+// Aleo Fonts
+
+@font-face {
+    font-family: 'Aleo', serif;
+    font-style: bold;
+    font-weight: 700;
+    src: url(../../font/Aleo-Bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../font/Aleo-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Aleo', serif;
+    font-style: light;
+    font-weight: 300;
+    src: url(../../font/Aleo-Light.ttf) format('ttf');
+}

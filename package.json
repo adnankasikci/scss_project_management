@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass app/scss/ -o app/css/main.css"
+    "compile-sass": "node-sass app/scss/ -o app/css/main.css",
+    "deneme": "sass --watch app/scss:app/css/main.css"
   },
   "keywords": [],
   "author": "",
