@@ -1,0 +1,162 @@
+@import '../abstracts/mixins';
+@import '../components/popover';
+
+.navbar {
+    @include displayFlex(column, space-between, start);
+    color: var(--colors-white);
+    position: relative;
+
+    .navbarTop {
+        background-color: var(--colors-titanium-black);
+
+        .navbarTopContent {
+            padding: 1rem 0;
+            @include gridChange(75rem);
+            @include displayFlex(row, center, space-between);
+
+
+            &__title {
+                color: var(--colors-saf-white);
+                font-family: 'Alatsi', sans-serif;
+                font-size: 1.25rem;
+                @include transitionChange(all, 1.2s, ease);
+
+                &:hover {
+                    transform: rotate(720deg);
+                    color: var(--colors-orange);
+                    @include textshadowChange(0, 0, 1rem, var(--colors-orange));
+                }
+            }
+
+            &__socialMedia {
+                display: flex;
+                gap: 1rem;
+                font-size: 1.25rem;
+
+
+                &-item {
+                    @include transitionChange(all, .3s, ease);
+
+                    a {
+                        color: var(--colors-saf-white);
+
+                        :hover {
+                            transform: scale(.9);
+                            color: var(--colors-orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbarBottom {
+        @include shadowChange(0, 0px, 1px, 1px, #ffffff0c);
+
+        .navbarBottomContent {
+            @include gridChange(75rem);
+            @include displayFlex(row, center, space-between);
+
+            padding: 1rem 0;
+
+            &__navList {
+                @include displayFlex(row, center, center);
+
+                &-item:first-child a {
+                    padding-left: 0;
+
+                    &::before {
+                        left: 40%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                &-item {
+
+                    a {
+                        color: var(--colors-saf-white);
+                        @include transitionChange(all, .3s, ease);
+                        padding: 1rem;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            right: 0;
+                            bottom: 0;
+                            transform: translateX(-50%);
+                            @include transitionChange(all, .3s, ease);
+                            width: 0;
+                            height: .10rem;
+                            border-bottom: 0.15rem solid var(--colors-orange);
+                        }
+
+                        &:hover {
+                            color: var(--colors-orange);
+
+                            &::before {
+                                width: 75%;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            &__author {
+                font-family: 'Alatsi', sans-serif;
+                font-size: .875rem;
+                @include transitionChange(all, .3s, ease);
+                position: relative;
+
+                &:hover {
+                    color: var(--colors-orange);
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        bottom: -1rem;
+                        width: 16rem;
+                        height: .1rem;
+                        background-color: var(--colors-orange);
+                        @include shadowChange(5px, 5px, 10px, 0, rgba(241, 142, 4, 0.134))
+                    }
+                }
+
+            }
+        }
+    }
+
+    .navbarLogo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+        @include displayFlex(row, center, center);
+
+        &__content {
+            position: relative;
+
+            &-hidden {
+                display: none;
+                position: absolute;
+                z-index: 1;
+                width: 12.5rem;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+        }
+
+        &:hover {
+            .navbarPopover__content-hidden {
+                display: flex;
+            }
+        }
+    }
+
+}

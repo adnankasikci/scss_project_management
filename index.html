@@ -5,8 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCSS Management</title>
     <link rel="stylesheet" href="app/css/main.css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Font Ailesi ve Renk Yönetimi</h1>
+    <nav class="navbar">
+        <div class="navbarTop">
+            <div class="navbarTopContent">
+                <span class="navbarTopContent__title">Writing with BEM</span>
+                <ul class="navbarTopContent__socialMedia">
+                    <li class="navbarTopContent__socialMedia-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="navbarTopContent__socialMedia-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="navbarTopContent__socialMedia-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="navbarTopContent__socialMedia-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbarBottom">
+            <div class="navbarBottomContent">
+                <ul class="navbarBottomContent__navList">
+                    <li class="navbarBottomContent__navList-item"><a href="#">Home Page</a></li>
+                    <li class="navbarBottomContent__navList-item"><a href="#">Project About</a></li>
+                    <li class="navbarBottomContent__navList-item"><a href="#">Author</a></li>
+                    <li class="navbarBottomContent__navList-item"><a href="#">Donation</a></li>
+                </ul>
+                <span class="navbarBottomContent__author">Bu Projeyi Ele Alan : Adnan Şevki Kaşıkçı</span>
+            </div>
+        </div>
+        <a class="navbarLogo" href="#" title="Sass Example">
+            <div class="navbarLogo__content popover__standart">
+                <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="42" cy="42" r="34" fill="#FF8743"/>
+                    <circle cx="42" cy="42" r="42" fill="#FF8743" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 38.4286C19 38.7056 19.0841 38.8884 19.1312 39.0661C19.4383 40.2218 20.0984 41.2135 20.8815 42.1182C21.9969 43.4075 23.363 44.4454 24.7623 45.4214C25.9761 46.2677 27.2146 47.0952 28.4332 47.9353C28.6424 48.0795 28.8402 48.2454 29.0673 48.4223C28.8719 48.5247 28.7094 48.615 28.5404 48.6981C26.9323 49.4893 25.3851 50.3763 23.9589 51.4508C23.0994 52.0986 22.2683 52.7869 21.6813 53.6865C20.7369 55.1334 20.4026 56.6748 21.1066 58.3207C21.3121 58.8014 21.6257 59.2167 22.068 59.5236C22.2114 59.6229 22.3723 59.7214 22.54 59.76C22.9698 59.8582 23.4077 59.9224 23.8427 60L25.0747 59.9992C26.4371 59.8814 27.6772 59.4287 28.7979 58.6784C30.5495 57.5058 31.7295 55.9336 32.2368 53.9158C32.6057 52.4492 32.6207 50.9811 32.1861 49.5212C32.1445 49.386 32.0965 49.2527 32.0423 49.1217C31.9895 48.9905 31.9273 48.8628 31.8542 48.6993L34.6472 47.1413L34.6891 47.176C34.6383 47.3371 34.5843 47.4979 34.5384 47.6606C34.2065 48.8364 33.9859 50.0327 34.0651 51.253C34.1496 52.5533 34.5237 53.7704 35.3085 54.8568C35.943 55.7354 37.4549 55.7681 38.1292 54.8863C38.3684 54.5731 38.6004 54.2456 38.7746 53.8961C39.23 52.9839 39.6516 52.0556 40.0866 51.1336L40.1626 50.9649C40.1313 51.4015 40.0948 51.7849 40.0781 52.1687C40.0521 52.768 40.0883 53.3638 40.2995 53.9339C40.4802 54.4218 40.7877 54.7862 41.3637 54.8505C41.7577 54.8942 42.0717 54.7192 42.3614 54.4974C42.81 54.1535 43.1819 53.7246 43.4544 53.2369C44.2266 51.8614 45.0195 50.4941 45.7194 49.0839C46.4766 47.5586 47.1387 45.9888 47.8418 44.4375L47.958 44.1624C48.1241 44.7956 48.2399 45.4158 48.4531 46.0029C48.7009 46.6842 49.0076 47.3493 49.3415 47.9959C49.4995 48.3013 49.4812 48.4995 49.2623 48.7556C48.3459 49.8274 47.4454 50.9121 46.544 51.9957C46.3446 52.2349 46.1459 52.4784 45.9798 52.7396C45.879 52.9046 45.8127 53.0873 45.7848 53.2771C45.7569 53.4519 45.7997 53.6304 45.9045 53.7752C46.0092 53.9199 46.1676 54.0198 46.3466 54.0537C46.7077 54.1292 47.078 54.1548 47.4466 54.1298C48.7046 54.0399 49.8468 53.6116 50.8566 52.8858C52.165 51.9457 52.585 50.6627 52.2682 49.1422C52.1825 48.7296 52.0309 48.3285 51.8835 47.9309C51.8173 47.7516 51.8128 47.626 51.9335 47.4589C52.9794 46.01 53.8731 44.4729 54.7041 42.9004C54.737 42.8385 54.7708 42.7767 54.8284 42.7105C55.0977 44.0699 55.5031 45.38 56.2294 46.5688C55.859 46.9151 55.4922 47.2292 55.1603 47.5751C54.4296 48.3372 53.7959 49.1646 53.4652 50.1737C53.3231 50.6087 53.2138 51.0508 53.2772 51.5154C53.3755 52.2369 53.9848 52.7058 54.7163 52.5414C56.2818 52.19 57.6332 51.4744 58.6207 50.2068C59.2853 49.3534 59.3458 48.4014 59.0675 47.4041C58.9912 47.133 58.9006 46.8663 58.8031 46.5554C59.1894 46.4391 59.5659 46.2997 59.9555 46.2134C61.978 45.7657 63.9785 45.8438 65.9274 46.5522C67.0652 46.966 67.9844 47.6583 68.5296 48.7474C69.1953 50.0788 68.8273 51.342 67.5336 52.1837C67.4129 52.2621 67.2748 52.3239 67.1749 52.4221C67.1429 52.458 67.1189 52.5001 67.1046 52.5456C67.0903 52.591 67.0858 52.6389 67.0916 52.6861C67.1001 52.7345 67.2322 52.7952 67.3081 52.7944C67.7334 52.7913 68.0783 52.5749 68.4093 52.3527C69.2388 51.7959 69.844 51.0469 69.9744 50.0606L70 49.9866L69.9687 49.3443C69.9561 49.3073 69.9781 49.2706 69.9752 49.2426C69.7989 47.8064 69.0081 46.6925 67.8577 45.8193C66.5254 44.8087 64.9522 44.3926 63.2884 44.3268C61.939 44.2704 60.5913 44.4716 59.3218 44.919C58.9575 45.047 58.5963 45.1987 58.23 45.3418C58.1808 45.2555 58.128 45.1727 58.0845 45.0872C57.7084 44.3402 57.2526 43.6262 57.1519 42.7696C57.0804 42.1612 56.9927 41.5536 57.1417 40.9519C57.2851 40.3731 57.472 39.8041 57.6479 39.2332C57.7385 38.9392 57.6747 38.7745 57.3855 38.6421C57.2847 38.5934 57.1771 38.5591 57.0662 38.5405C56.3553 38.4404 55.6542 38.4975 54.9657 38.6918C54.722 38.7607 54.5449 38.8931 54.4909 39.1547C54.46 39.3049 54.3971 39.4487 54.3532 39.5968C54.1732 40.2127 54.0457 40.8404 53.7549 41.4271C53.0261 42.8988 52.1942 44.3149 51.3428 45.7208C51.2506 45.8725 51.1535 46.0215 51.0374 46.2055C50.7384 45.5987 50.4195 45.0541 50.3229 44.4158C50.2136 43.6939 50.1275 42.9733 50.3127 42.2569C50.4504 41.7226 50.6304 41.1982 50.7961 40.671C50.8745 40.4204 50.8383 40.2888 50.6044 40.1568C50.4862 40.0902 50.3525 40.0311 50.2193 40.0118C49.4904 39.9041 48.7457 39.9632 48.0445 40.1843C47.8239 40.2537 47.7082 40.392 47.6407 40.6127C47.4425 41.2636 47.2735 41.9303 46.9953 42.5493C45.8685 45.0553 44.7092 47.5483 43.5511 50.0409C43.3094 50.5615 43.0263 51.0638 42.7537 51.5706C42.6847 51.699 42.584 51.8121 42.4978 51.9327C42.4288 51.8535 42.402 51.7991 42.4024 51.7447C42.4044 51.4244 42.365 51.0946 42.428 50.7849C42.6213 49.8482 42.835 48.9156 43.069 47.9877C43.2599 47.2209 43.4821 46.4612 43.6937 45.6995C43.7648 45.4446 43.766 45.2062 43.5771 44.9919C43.2599 44.6329 42.597 44.5541 42.2038 44.8307L42.0299 44.9261L42.0636 44.6542C42.1465 44.0714 42.1631 43.4906 41.9982 42.9165C41.7927 42.201 41.2662 41.7892 40.501 41.8121C40.1443 41.8227 39.7698 41.8818 39.4396 42.0079C38.0508 42.5359 36.9829 43.4709 36.0738 44.5959C35.9895 44.7003 35.8851 44.7879 35.7663 44.8536C34.5912 45.4856 33.4124 46.1097 32.234 46.7362L30.9224 47.4333C30.5706 47.1078 30.2509 46.7701 29.8882 46.4837C28.7805 45.6073 27.6549 44.7527 26.5395 43.8862C25.5508 43.1183 24.593 42.3184 23.8602 41.3014C23.3151 40.5449 22.9637 39.717 22.93 38.7816C22.8873 37.5897 23.2359 36.5006 23.8614 35.4867C24.6616 34.1896 25.7531 33.1486 26.953 32.2057C28.2224 31.2088 29.5953 30.3624 31.0182 29.5897C33.009 28.5089 35.0567 27.5522 37.2522 26.9206C39.5033 26.2728 41.7874 25.902 44.1434 26.1605C45.0695 26.2622 45.9688 26.4678 46.7946 26.9072C47.4271 27.2433 47.9458 27.6834 48.1871 28.3714C48.4251 29.0483 48.4178 29.7343 48.2529 30.4219C47.9178 31.8144 47.1318 32.9622 46.1427 33.9879C44.5203 35.6692 42.5413 36.8138 40.3133 37.57C39.0323 38.0053 37.6994 38.2811 36.3468 38.3907C35.2382 38.481 34.1529 38.3856 33.1033 38.0117C32.4082 37.7638 31.803 37.3848 31.3164 36.8347C31.2295 36.7362 31.1182 36.6294 30.9561 36.7216C30.7973 36.8123 30.7692 36.9588 30.8224 37.1074C30.9114 37.354 30.9935 37.6109 31.132 37.8316C31.4801 38.3852 31.9878 38.7867 32.5468 39.1311C33.6203 39.7935 34.8203 40.0161 36.0644 40.0677C37.9525 40.1469 39.7946 39.8735 41.6107 39.3821C44.2035 38.6807 46.4579 37.4419 48.2659 35.4875C49.7713 33.8602 50.8465 32.0236 51.0768 29.806C51.1893 28.7236 51.0695 27.6633 50.5471 26.6759C49.9804 25.6061 49.0795 24.8106 48.0023 24.2625C46.4335 23.4646 44.7405 23 42.993 23H41.2423C39.126 23 37.0799 23.5883 35.0912 24.29C33.5858 24.8216 32.1097 25.4489 30.6766 26.1432C27.5558 27.6558 24.6494 29.4798 22.2622 31.9878C21.0728 33.2372 20.0659 34.6159 19.4866 36.2393C19.3118 36.724 19.1612 37.2166 19.0353 37.7154M30.3435 51.9055C30.2083 53.6625 29.3873 55.0869 28.0457 56.2406C27.2909 56.8892 26.4253 57.351 25.4171 57.5133C25.0516 57.572 24.6775 57.5862 24.3228 57.4392C23.8171 57.2296 23.7038 56.7942 23.694 56.3304C23.679 55.5912 23.9459 54.923 24.3119 54.287C24.7896 53.458 25.4899 52.8259 26.2377 52.2357C27.4156 51.3054 28.6936 50.5181 30.0023 49.775L30.101 49.7356C30.3033 50.4606 30.3996 51.1765 30.3435 51.9055ZM40.5627 44.2696C40.4672 44.8307 40.3478 45.3922 40.1788 45.936C39.5947 47.8182 38.8445 49.6422 38.0333 51.4417C37.8834 51.7747 37.6653 52.0785 37.4756 52.3941C37.4433 52.4426 37.4047 52.4868 37.3606 52.5257C37.1258 52.7507 36.9033 52.7389 36.7846 52.4445C36.6465 52.1025 36.5616 51.7365 36.4885 51.3743C36.4394 51.1312 36.4512 50.8759 36.4357 50.6269C36.4516 48.8561 37.0085 47.2469 37.9533 45.7488C38.3428 45.131 38.7669 44.5423 39.4148 44.1514C39.6163 44.0299 39.8344 43.9362 40.0627 43.8732C40.4079 43.7791 40.62 43.9339 40.5627 44.2696ZM47.5347 52.8862L50.0406 50.048C50.145 51.1021 48.298 53.2062 47.5347 52.8862ZM55.5381 50.9764C55.361 51.0749 55.168 51.1458 54.9864 51.2368C54.8203 51.3204 54.7655 51.236 54.7606 51.0973C54.7582 51.0013 54.7709 50.9055 54.7984 50.8132C55.1367 49.6556 55.7595 48.6674 56.686 47.8635L56.751 47.8312C57.1917 49.0271 56.6823 50.3404 55.5381 50.9764Z" fill="#603116"/>
+                </svg>
+                <div class="popover__standart-collapse">
+                    <div class="popover__content">
+                        <div class="popover__content__top">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span>Bilgilendirme</span>
+                        </div>
+                        <div class="popover__content__middle">
+                            <span>SCSS / Project</span>
+                            <p>SCSS ve Bem mimarilerine daha yakından bakmak için hazırladığım web projemdir. Bu projeyle birlikte büyük projelerin SCSS ile yönetimini ve aynı zamanda BEM mimarisi hakimiyetimi üst düzeye çıkarmak için oluşturdum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </nav>
+
+    <main>
+        <article>
+            <div class="page flex flex-row">
+                <div class="pageStage col-3 col-responsive">
+                    <div class="pageStage__top">
+                        <span>Stages / Aşamalar</span>
+                    </div>
+                    <div class="pageStage__content">
+                        <div class="pageStage__content-title">1.Aşama Components</div>
+                        <div class="pageStage__content-dropdown">
+                            <a href="#">
+                                <div class="pageStage__content-dropdown-item">Buttons Variant</div>
+                            </a>
+                            <a href="#">
+                                <div class="pageStage__content-dropdown-item">Variant and Film Card</div>
+                            </a>
+                            <a href="#">
+                                <div class="pageStage__content-dropdown-item">Use Icons</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pageStage__content">
+                        <div class="pageStage__content-title">2. Aşama (Colors) </div>
+                        <div class="pageStage__content-dropdown">
+                            <a href="#">
+                                <div class="pageStage__content-dropdown-item">Colors Used In The Project</div>
+                            </a>
+                            <a href="#">
+                                <div class="pageStage__content-dropdown-item">Projenin Tamamlanması</div>
+                            </a>
+                            <a href="#">
+                                <div class="pageStage__content-dropdown-item last">Github</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent col-9">
+                    <div class="pageContent__one">
+                        <h1>SCSS / Project</h1>
+                        <p>SCSS ve Bem mimarilerine daha yakından bakmak için hazırladığım web projemdir. Bu projeyle birlikte büyük projelerin SCSS ile yönetimini ve aynı zamanda BEM mimarisi hakimiyetimi üst düzeye çıkarmak için oluşturdum.</p>
+                    </div>
+                    <div class="pageContent__two">
+                        <h2>Components</h2>
+                        <p>SCSS ve CSS için hazırladığımız bir çok components bu bölüm içerisinde yer alacaktır. Bölüm içerisinde bir çok bileşenin uygun teknolojiye ve BEM mimarisine göre yazılmıştır.</p>
+                    </div>
+                    <div class="pageContent__three">
+                        <h3>Buttons Variant</h3>
+                        <p>Proje içinde bir çok noktada buton kullanıldığı için farklı varyant şeklinde hazırlandı.</p>
+                        <div class="pageContent__three-Buttons flex">
+                            <div class="pageContent__three-Buttons-One">
+                                <div class="btn btn-medium btn__primary btn__primary-disabled">Medium</div>
+                                <div class="btn btn-medium btn__primary btn__primary-standart">Medium</div>
+                                <div class="btn btn-medium btn__primary btn__primary-active">Medium</div>
+                                <div class="btn btn-medium btn__primary btn__primary-outline">Medium</div>
+                                <div class="btn btn-medium btn__primary btn__primary-none">Medium</div>
+                            </div>
+                            <div class="pageContent__three-Buttons-Two">
+                                <div class="btn btn-small btn__primary btn__primary-disabled">Small</div>
+                                <div class="btn btn-small btn__primary btn__primary-standart">Small</div>
+                                <div class="btn btn-small btn__primary btn__primary-active">Small</div>
+                                <div class="btn btn-small btn__primary btn__primary-outline">Small</div>
+                                <div class="btn btn-small btn__primary btn__primary-none">Small</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pageContent__for">
+                        <h4>Movies Card</h4>
+                        <p class="-p">Aşşağıda verilen bir card componentidir. Bunun yanı sıra sidebar ve watch film bölümleri component halinde hazırlanmıştır.</p>
+                        <div class="card">
+                            <img src="app/img/componentImage.png" alt="">
+                            <div class="card__detail">
+                                <div class="card__detail-title">The Godfather (1972)</div>
+                                <div class="card__detail-score">
+                                    <span>%86</span>
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                            </div>
+                            <p class="card__content">Pencil follower invite main layout rotate. Polygon figjam hand pencil bullet variant. Image flatten vector plugin device pencil export boolean link figjam. Hand clip edit inspect.</p>
+                            <div class="btn btn-small btn__primary-standart">İZLE</div>
+                        </div>
+                    </div>
+                    <div class="pageContent__five">
+                        <h5>Use Icons</h5>
+                        <p>Projede kullanılan ikonlar bu şekilde kullanılmıştır bu yüzden bir liste halinde tutulmuş ve aşşağıda belirtilmiştir.</p>
+                        <div class="pageContent__five-icons">
+                            <i class="fas fa-ellipsis-v"></i>
+                            <i class="fas fa-comments"></i>
+                            <i class="fas fa-play-circle"></i>
+                            <i class="fas fa-arrow-right"></i> 
+                            <i class="fas fa-thumbs-up"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="pageContent__six">
+                        <h6>Colors Used In The Project</h6>
+                        <p>Projede kullanılan ikonlar bu şekilde kullanılmıştır bu yüzden bir liste halinde tutulmuş ve aşşağıda belirtilmiştir.</p>
+                        <div class="pageContent__six-colors">
+                            <div class="colors-box colors-box-black"></div>
+                            <div class="colors-box colors-box-brown"></div>
+                            <div class="colors-box colors-box-orange"></div>
+                            <div class="colors-box colors-box-saf-white"></div>
+                            <div class="colors-box colors-box-titanium-black"></div>
+                            <div class="colors-box colors-box-titanium-white"></div>
+                            <div class="colors-box colors-box-white"></div>
+                        </div>
+                    </div>
+                    <div class="pageContent__seven">
+                        <h6>Projenin Tamamlanması</h6>
+                        <p>Projeyi tamamlayarak sass yapısının bir çok noktada ne kadar üstünlük sağladığı konusunda deneyimlenmiş ve profosyonel sahada daha atif bir şekilde kullanımının neden bu denli çok destekliğindiği konusunda tecrübe ve deneyim kazanmış bulundum.</p>
+                        <a href="https://github.com/adnankasikci" target="_blank">Github: https://github.com/adnankasikci</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <article>
+            <div class="footer">
+                <ul class="footer__link">
+                    <li class="footer__link-item"><a href="#">Home Page</a></li>
+                    <li class="footer__link-item"><a href="#">Project About</a></li>
+                    <li class="footer__link-item"><a href="#">Author</a></li>
+                    <li class="footer__link-item"><a href="#">Donation</a></li>
+                </ul>
+                <div class="footer__author">Tasarım ve Yazılım : Adnan Şevki Kaşıkçı</div>
+            </div>
+        </article>
+    </footer>
 </body>
 </html>

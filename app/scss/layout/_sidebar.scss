@@ -1,0 +1,79 @@
+@import '../abstracts/mixins';
+
+
+/* Scrolls */
+
+.pageStage::-webkit-scrollbar {
+    width: .75rem;
+    background: #563600;
+    border-radius: 10px;
+}
+
+/* Track */
+.pageStage::-webkit-scrollbar-track {
+    box-shadow: inset 5px 0 5px #562400;
+    border-radius: 10px;
+}
+
+/* Handle */
+.pageStage::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+    background: #FF8743;
+    box-shadow: inset 3px 0 2px #c76227;
+}
+
+/* Handle on hover */
+.pageStage::-webkit-scrollbar-thumb:hover {
+    background: #ffa200;
+
+}
+
+
+.pageStage {
+    overflow-y: scroll;
+    font-family: 'Alatsi', sans-serif;
+    font-weight: 700;
+    height: 15rem;
+    padding-right: .5rem;
+
+    &__top {
+        border-top-right-radius: .75rem;
+        border-top-left-radius: .75rem;
+        background-color: var(--colors-orange);
+        font-size: 1.5rem;
+        color: var(--colors-brown);
+
+        text-align: center;
+        padding: .625rem 0;
+    }
+
+    &__content {
+        &-title {
+            background-color: #414A5C;
+            padding: 1rem;
+        }
+
+        a {
+            color: var(--colors-white);
+        }
+
+        &-dropdown-item {
+            padding: .8rem 1rem;
+            font-size: .9rem;
+            font-weight: 500;
+            background-color: #D9D9D910;
+            @include shadowChange(0, 0, 5px, 0, #00000025);
+
+            &.last {
+                border-bottom-left-radius: .75rem;
+                border-bottom-right-radius: .75rem;
+            }
+
+            &:hover {
+                background-color: #D9D9D920;
+            }
+        }
+
+    }
+}

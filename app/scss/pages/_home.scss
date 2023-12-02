@@ -1,0 +1,172 @@
+.pageContent {
+    &__one {
+        h1 {
+            font-size: 3rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__two {
+        h2 {
+            font-size: 2.25rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+            margin-top: 5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+        }
+    }
+
+    &__three {
+        h3 {
+            font-size: 1.5rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+            margin-top: 5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        &-Buttons {
+            &-One {
+                margin-top: 1.5rem;
+                display: flex;
+                gap: 1rem;
+            }
+
+            &-Two {
+                margin-top: 1rem;
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+
+    &__for {
+        h4 {
+            font-size: 1.5rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+            margin-top: 5rem;
+        }
+
+        .-p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__five {
+        h5 {
+            font-size: 1.5rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+            margin-top: 5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &-icons {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    &__six {
+        h6 {
+            font-size: 1.5rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+            margin-top: 5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &-colors {
+            display: flex;
+            gap: 1rem;
+
+
+            .colors-box {
+                width: 1.5rem;
+                height: 1.5rem;
+
+                &-black {
+                    background-color: var(--colors-black);
+                }
+
+                &-brown {
+                    background-color: var(--colors-brown);
+                }
+
+                &-orange {
+                    background-color: var(--colors-orange);
+                }
+
+                &-saf-white {
+                    background-color: var(--colors-saf-white);
+                }
+
+                &-titanium-black {
+                    background-color: var(--colors-titanium-black);
+                }
+
+                &-titanium-white {
+                    background-color: var(--colors-titanium-white);
+                }
+
+                &-white {
+                    background-color: var(--colors-white);
+                }
+            }
+        }
+    }
+
+    &__seven {
+        h6 {
+            font-size: 1.2rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+            margin-top: 5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+}

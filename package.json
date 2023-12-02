@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile-sass": "node-sass app/scss/ -o app/css/main.css",
-    "deneme": "sass --watch app/scss:app/css/main.css"
+    "sass": "sass --watch app/scss:app/css/main.css"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^9.0.0",
     "sass": "^1.69.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2"
   }
 }

@@ -1,0 +1,40 @@
+@import '../../scss/abstracts/mixins';
+
+$column-count: 12; // Toplam kolon sayısı
+$gutter-width: 20px; // Kolonlar arası boşluk miktarı
+
+@mixin make-columns() {
+
+    // Her bir kolon için gerekli stilleri tanımlayan mixin
+    @for $i from 1 through $column-count {
+        .col-#{$i} {
+            flex: 0 0 calc((100% / #{$column-count}) * #{$i});
+            max-width: calc((100% / #{$column-count}) * #{$i});
+            margin-right: $gutter-width;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .flex.flex-row.flex-column .col-#{$i} {
+            max-width: 100%;
+        }
+    }
+}
+
+.flex.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex.flex-row.flex-column {
+    flex-direction: column !important;
+}
+
+.flex {
+    @include gridChange(75rem);
+    margin-right: auto;
+    margin-left: auto;
+    @include make-columns();
+}

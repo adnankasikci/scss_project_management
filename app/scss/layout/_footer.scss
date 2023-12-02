@@ -1,0 +1,27 @@
+@import '../abstracts/mixins';
+
+footer {
+    background-color: #212B41;
+    font-family: 'Alatsi', sans-serif;
+}
+
+.footer {
+    @include gridChange(75rem);
+    @include displayFlex(row, center, space-between);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 5rem;
+
+    &__link {
+        @include displayFlex(row, center, start);
+        gap: 1rem;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: var(--colors-orange);
+            }
+        }
+    }
+}

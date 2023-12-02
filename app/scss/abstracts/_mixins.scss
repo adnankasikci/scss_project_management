@@ -1,0 +1,32 @@
+@mixin displayFlex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin gridChange($width) {
+    width: 100%;
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin textshadowChange($primary, $second, $blur, $color) {
+    text-shadow: $primary $second $blur $color;
+}
+
+@mixin shadowChange($primary, $second, $three, $for , $color) {
+    box-shadow: $primary $second $three $for $color;
+}
+
+@mixin transitionChange($type, $time, $shape) {
+    transition: $type $time $shape;
+}
+
+@mixin positionChange($position, $top, $bottom, $start, $end) {
+    position: $position;
+    top: $top;
+    bottom: $bottom;
+    left: $start;
+    right: $end;
+}
