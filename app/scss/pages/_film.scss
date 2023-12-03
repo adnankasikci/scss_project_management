@@ -1,0 +1,201 @@
+@import '../abstracts/mixins';
+
+.cardSlider {
+    @include gridChange(75rem);
+    color: white;
+    margin-top: 3rem;
+
+    &__top {
+        @include displayFlex(row, center, space-between);
+        margin-bottom: 3rem;
+
+        &-Content {
+            @include displayFlex(row, center, null);
+            gap: 1rem;
+        }
+
+        &-Header {
+            font-size: 2rem;
+            font-family: 'Alatsi', sans-serif;
+            color: var(--colors-white);
+            font-weight: 700;
+        }
+
+        &-Date {
+            font-size: 1.25rem;
+            color: var(--colors-orange);
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+        }
+
+        &-Link {
+            display: flex;
+            gap: .5rem;
+            color: var(--colors-white);
+        }
+    }
+
+    &__content {
+        @include displayFlex(row, center, space-between);
+        width: 100%;
+    }
+}
+
+.videoContent {
+    margin-top: 3rem;
+    color: var(--colors-white);
+
+    .watchTv {
+        padding: 2rem;
+        background-color: #212B41;
+        border-radius: .5rem;
+
+        hr {
+            margin: 2rem 0;
+            background-color: transparent;
+            border: 1px solid #ffffff50;
+        }
+
+        &__top {
+            @include displayFlex(flex, center, space-between);
+
+            font-family: 'Alatsi', sans-serif;
+
+            &-title {
+                @include displayFlex(flex, center, null);
+                gap: .5rem;
+
+
+                i {
+                    font-size: 1.25rem;
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        &__button {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        &__video {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            &-Alpha {
+                @include positionChange(absolute, 0, 0, 0, 0);
+                background-color: #00000075;
+                @include displayFlex(row, center, center);
+                z-index: 0;
+
+                i {
+                    font-size: 3rem;
+                    cursor: pointer;
+                }
+            }
+
+            &-Bottom {
+                @include positionChange(absolute, null, 0, 0, 0);
+                background-color: var(--colors-orange);
+                color: white;
+                z-index: 10;
+                text-align: center;
+                padding: 8px 0;
+                font-family: 'Alatsi', sans-serif;
+            }
+        }
+
+        &__videoButton {
+            margin: 2rem 0;
+            @include displayFlex(row, center, space-between)
+        }
+
+        &__yorum {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-family: 'Alatsi', sans-serif;
+            font-weight: 700;
+        }
+
+        &__message {
+            padding: 2rem;
+            border-radius: .5rem;
+            background-color: #1C273D;
+        }
+
+
+
+
+    }
+
+    .watchSidebar {
+        font-family: 'Alatsi', sans-serif;
+        font-weight: 500;
+        color: var(--colors-white);
+        padding: 1rem;
+        background-color: #212B41;
+        border-radius: .5rem;
+        height: 53rem;
+
+        &__film {
+            @include displayFlex(row, center, start);
+            gap: 1rem;
+
+            &-detail {
+                @include displayFlex(column, start, start);
+                gap: 1rem;
+            }
+
+            &-link {
+                font-size: .75rem;
+            }
+        }
+
+        &__title {
+            margin-top: 2rem;
+            @include displayFlex(row, center, start);
+            gap: .5rem;
+
+            span {
+                font-size: .875rem;
+                font-weight: 700;
+            }
+        }
+
+        hr {
+            margin: 1rem 0;
+            background-color: transparent;
+            border: 1px solid #ffffff50;
+        }
+
+        &__List {
+            @include displayFlex(column, start, start);
+            gap: .5rem;
+
+            &-item {
+                background-color: #1C273D;
+                padding: 1rem 1rem;
+                width: 100%;
+                border-radius: .3rem;
+
+                a {
+                    color: var(--colors-white);
+                }
+
+                i {
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}

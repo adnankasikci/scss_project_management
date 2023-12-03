@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Management | Film</title>
+    <link rel="stylesheet" href="app/css/main.css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbarTop">
+            <div class="navbarTopContent">
+                <span class="navbarTopContent__title">Writing with BEM</span>
+                <ul class="navbarTopContent__socialMedia">
+                    <li class="navbarTopContent__socialMedia-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/"><i class="fab fa-facebook"></i></a></li>
+                    <li class="navbarTopContent__socialMedia-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/"><i class="fab fa-instagram"></i></a></li>
+                    <li class="navbarTopContent__socialMedia-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/"><i class="fab fa-twitter"></i></a></li>
+                    <li class="navbarTopContent__socialMedia-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbarBottom">
+            <div class="navbarBottomContent">
+                <ul class="navbarBottomContent__navList">
+                    <li class="navbarBottomContent__navList-item"><a href="index.html">Home Page</a></li>
+                    <li class="navbarBottomContent__navList-item"><a href="film.html">Project About</a></li>
+                    <li class="navbarBottomContent__navList-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/">Author</a></li>
+                    <li class="navbarBottomContent__navList-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/">Donation</a></li>
+                </ul>
+                <span class="navbarBottomContent__author">Bu Projeyi Ele Alan : Adnan Şevki Kaşıkçı</span>
+            </div>
+        </div>
+        <a class="navbarLogo" href="index.html" title="Sass Example">
+            <div class="navbarLogo__content popover__standart">
+                <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="42" cy="42" r="34" fill="#FF8743"/>
+                    <circle cx="42" cy="42" r="42" fill="#FF8743" fill-opacity="0.2"/>
+                    <path d="M45.2812 37.5H40.9219L46.9219 31.5H51C51.0469 31.5 51.1406 31.5469 51.2344 31.5469L45.2812 37.5ZM37.7812 37.5H33.4219L39.4219 31.5H43.7812L37.7812 37.5ZM53.2969 32.6719C53.7188 33.1875 54 33.7969 54 34.5V37.5H48.4219L53.2969 32.6719ZM36.2812 31.5L30.2812 37.5H30V34.5C30 32.8594 31.3125 31.5 33 31.5H36.2812ZM30 49.5V39H54V49.5C54 51.1875 52.6406 52.5 51 52.5H33C31.3125 52.5 30 51.1875 30 49.5Z" fill="white"/>
+                </svg>
+                <div class="popover__standart-collapse">
+                    <div class="popover__content">
+                        <div class="popover__content__top">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span>Bilgilendirme</span>
+                        </div>
+                        <div class="popover__content__middle">
+                            <span>SCSS / Project</span>
+                            <p>SCSS ve Bem mimarilerine daha yakından bakmak için hazırladığım web projemdir. Bu projeyle birlikte büyük projelerin SCSS ile yönetimini ve aynı zamanda BEM mimarisi hakimiyetimi üst düzeye çıkarmak için oluşturdum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="cardSlider">
+                <div class="cardSlider__top">
+                    <div class="cardSlider__top-Header">Son Zamanların En Çok Beğenilen Filmleri</div>
+                    <div class="cardSlider__top-Content">
+                        <span class="cardSlider__top-Date">1900-2020 arasında</span>
+                        <div class="cardSlider__top-Link">
+                            <span>Aralığı genişlet</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardSlider__content">
+                    <div class="card">
+                        <img src="app/img/componentImage.png" alt="">
+                        <div class="card__detail">
+                            <div class="card__detail-title">The Godfather (1972)</div>
+                            <div class="card__detail-score">
+                                <span>%86</span>
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <p class="card__content">Pencil follower invite main layout rotate. Polygon figjam hand pencil bullet variant. Image flatten vector plugin device pencil export boolean link figjam. Hand inspect.</p>
+                        <div class="btn btn-small btn__primary-standart">İZLE</div>
+                    </div>
+                    <div class="card">
+                        <img src="app/img/res1.png" alt="">
+                        <div class="card__detail">
+                            <div class="card__detail-title">Philosop Stone (2001)</div>
+                            <div class="card__detail-score">
+                                <span>%76</span>
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <p class="card__content">Rotate flows font strikethrough prototype. Outline opacity prototype select community duplicate layout blur thumbnail align. Style share edit horizontal hand arrange union.</p>
+                        <div class="btn btn-small btn__primary-standart">İZLE</div>
+                    </div>
+                    <div class="card">
+                        <img src="app/img/res2.png" alt="">
+                        <div class="card__detail">
+                            <div class="card__detail-title">Jojo Rabbit (2019)</div>
+                            <div class="card__detail-score">
+                                <span>%72</span>
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <p class="card__content">Arrange list draft vertical comment auto pencil. Vertical font clip comment distribute asset bold. Reesizing group clip share. Opacity pixel polygon move clip union.</p>
+                        <div class="btn btn-small btn__primary-standart">İZLE</div>
+                    </div>
+                    <div class="card">
+                        <img src="app/img/res3.png" alt="">
+                        <div class="card__detail">
+                            <div class="card__detail-title">Express (2017)</div>
+                            <div class="card__detail-score">
+                                <span>%86</span>
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <p class="card__content">Flows asset share slice flows device subtract vertical editor. Follower blur underline background inspect device selection opacity. Ellipse style undo community.</p>
+                        <div class="btn btn-small btn__primary-standart">İZLE</div>
+                    </div>
+                    <div class="card">
+                        <img src="app/img/res5.png" alt="">
+                        <div class="card__detail">
+                            <div class="card__detail-title">Versailles (2020)</div>
+                            <div class="card__detail-score">
+                                <span>%79</span>
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <p class="card__content">Flows font move style distribute. Overflow figma pixel inspect flatten style. Strikethrough stroke draft auto draft plugin figjam. Team opacity. Team selection.</p>
+                        <div class="btn btn-small btn__primary-standart">İZLE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="videoContent flex flex-row">
+                <div class="watchTv col-9">
+                    <div class="watchTv__top">
+                        <div class="watchTv__top-title">
+                            <i class="fas fa-play-circle"></i>
+                            <h1>Geleceğe Dönüş 1.Sezon 1.Bölüm</h1>
+                        </div>
+                        <span class="watchTv__top-detail">Bölümün Keyfini Çıkar</span>
+                    </div>
+                    <hr>
+                    <div class="watchTv__button">
+                        <div class="btn btn-medium btn__primary btn__primary-disabled">Alternatif Video</div>
+                        <div class="btn btn-medium btn__primary btn__primary-standart">Türkçe Altyazılı</div>
+                        <div class="btn btn-medium btn__primary btn__primary-outline">Türkçe Dublaj</div>
+                    </div>
+                    <div class="watchTv__video">
+                        <img src="app/img/video_res.png" alt="">
+                        <div class="watchTv__video-Alpha">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="watchTv__video-Bottom">Bizden Haberdar Olmak için Whatsapp’tan Film Haberleri Edinin</div>
+                    </div>
+                    <div class="watchTv__videoButton">
+                        <div class="watchTv__videoButton-left">
+                            <div class="btn btn-small btn__primary btn__primary-standart">Önceki</div>
+                            <div class="btn btn-small btn__primary btn__primary-outline">Sonraki</div>
+                        </div>
+                        <div class="watchTv__videoButton-left">
+                            <div class="btn btn-small btn__primary btn__primary-none">Sinema Modu</div>
+                            <div class="btn btn-small btn__primary btn__primary-outline">Favorile</div>
+                        </div>
+                    </div>
+                    <div class="watchTv__yorum">
+                        <i class="fas fa-comments"></i>
+                        <span>Yorumlar</span>
+                    </div>
+                    <div class="watchTv__message">
+                        <span>Yorum yazmak için giriş yapmanız gerekiyor.</span>
+                        <div class="messageCard">
+                            <div class="messageCard__profile">
+                                <img src="app/img/profile-one.png" alt="">
+                                <div class="messageCard__profile-title">
+                                    <span>Film Kaşifi</span>
+                                    <div class="messageCard__profile-title-date">12 Ocak 2022, 00:12</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="messageCard__comment">
+                                <span>Sitenizi keşfettiğim için çok mutluyum. İngilizceme katkı sağlayacağınız için şimdiden teşekkürler…</span>
+                                <div class="messageCard__comment-detail">
+                                    <div class="messageCard__comment-detail-one">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        <span>79</span>
+                                    </div>
+                                    <div class="messageCard__comment-detail-two">
+                                        <i class="fas fa-thumbs-down"></i>
+                                        <span>7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageCard">
+                            <div class="messageCard__profile">
+                                <img src="app/img/profile-one.png" alt="">
+                                <div class="messageCard__profile-title">
+                                    <span>Hakan Deniz</span>
+                                    <div class="messageCard__profile-title-date">02 Ocak 2022, 10:09</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mesaggeCard__comment">
+                                <span>Çok farklı bir siteniz mevcut diğer sitelerden çok daha farklı bir yapıya sahip şimdiden tebrik ediyorum</span>
+                                <div class="messageCard__comment-detail">
+                                    <div class="messageCard__comment-detail-one">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        <span>24</span>
+                                    </div>
+                                    <div class="messageCard__comment-detail-two">
+                                        <i class="fas fa-thumbs-down"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="watchSidebar col-3">
+                    <div class="watchSidebar__film">
+                        <img src="app/img/basic_res.png" alt="">
+                        <div class="watchSidebar__film-detail">
+                            <span>Geleceğe Dönüş</span>
+                            <div class="watchSidebar__film-link">
+                                <span>Diziyi Görüntüle</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchSidebar__title">
+                        <i class="fas fa-ellipsis-v"></i>
+                        <span>Bu Sezonun Diğer Bölümleri</span>
+                    </div>
+                    <hr>
+                    <ul class="watchSidebar__List">
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 1.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 2.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#"><i class="fas fa-play-circle"></i>1.Sezon 3.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 4.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 5.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 6.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 7.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 8.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 9.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 10.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 11.Bölüm</a></li>
+                        <li class="watchSidebar__List-item"><a href="#">1.Sezon 12.Bölüm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <article>
+            <div class="footer">
+                <ul class="footer__link">
+                    <li class="footer__link-item"><a href="index.html">Home Page</a></li>
+                    <li class="footer__link-item"><a href="film.html">Project About</a></li>
+                    <li class="footer__link-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/">Author</a></li>
+                    <li class="footer__link-item"><a href="https://www.linkedin.com/in/adnan-sevki-kasikci-486b97224/">Donation</a></li>
+                </ul>
+                <div class="footer__author">Tasarım ve Yazılım : Adnan Şevki Kaşıkçı</div>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>

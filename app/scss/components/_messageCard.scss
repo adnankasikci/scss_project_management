@@ -1,0 +1,39 @@
+@import '../abstracts/mixins';
+
+.messageCard {
+    margin-top: 2rem;
+    font-family: 'Alatsi', sans-serif;
+
+    hr {
+        margin: 1.5rem 0 !important;
+    }
+
+    &__profile {
+        @include displayFlex(row, center, start);
+        gap: 1rem;
+
+        &-title span {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &-title-date {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    &__comment {
+        &-detail {
+            @include displayFlex(row, center, start);
+            margin-top: 1rem;
+            gap: 1rem;
+
+            &-one i {
+                color: var(--colors-orange);
+            }
+        }
+    }
+
+
+}
